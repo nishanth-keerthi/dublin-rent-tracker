@@ -26,19 +26,19 @@ This project aims to track and analyse rental listings in Dublin using data coll
 ```
 dublin_rent_tracker/
 ├── 01_data/
-│ ├── raw/ # Raw scraped CSV files
-│ ├── cleaned/ # Cleaned datasets ready for analysis
-│ └── reports/ # Summary stats, reports
+│ ├── raw/ s
+│ ├── cleaned/ 
+│ └── reports/ 
 ├── 02_notebooks/
-│ └── eda_rent_analysis.ipynb # Exploratory data analysis
+│ └── eda_rent_analysis.ipynb 
 ├── 03_powerbi/
-│ └── dashboard.pbix # Power BI dashboard file
+│ └── dashboard.pbix 
 ├── 04_etl_pipeline/
-│ ├── dags/ # Airflow DAG definitions
-│ └── scripts/ # Cleaning, transformation, and helper scripts
-├── assets/ # Project visuals, screenshots, logos
-├── requirements.txt # Project dependencies
-└── readme.md # Project documentation
+│ ├── dags/ 
+│ └── scripts/ 
+├── assets/
+├── requirements.txt 
+└── readme.md 
 ```
 
 ## License
@@ -60,4 +60,4 @@ For any questions, suggestions, or collaboration ideas:
 Email: nishanthkeerthi@gmail.com  
 LinkedIn: [linkedin.com/in/nishanth-keerthi](https://www.linkedin.com/in/nishanth-keerthi/)  
 GitHub: [github.com/nishanth-keerthi](https://github.com/nishanth-keerthi)
-Data Portfolio: [[Nishanth's Data Portfolio](https://ordinary-molybdenum-d39.notion.site/Nishanth-s-Data-Portfolio-227c3247852b80c092d1f28d2f08e48d)]
+Data Portfolio: [Nishanth's Data Portfolio](https://ordinary-molybdenum-d39.notion.site/Nishanth-s-Data-Portfolio-227c3247852b80c092d1f28d2f08e48d)
