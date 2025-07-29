@@ -1,0 +1,30 @@
+# Web Scraping
+playwright
+beautifulsoup4
+requests
+lxml
+
+# Data Handling
+pandas
+numpy
+
+# Visualization
+matplotlib
+seaborn
+plotly
+folium
+
+# Geospatial and Mapping
+geopandas
+geopy
+
+# ETL and Scheduling
+apache-airflow
+python-dotenv
+
+# Modeling (optional)
+scikit-learn
+
+# General
+tqdm
+jupyter
