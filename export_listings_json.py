@@ -6,7 +6,7 @@ import os
 featured_df = pd.read_excel("01_data/cleaned/daft_listings_featured.xlsx")
 eda_df = pd.read_excel("01_data/cleaned/daft_listings_post_eda.xlsx")
 
-# Sanity check: row count must match
+
 if len(featured_df) != len(eda_df):
     raise ValueError("Row count mismatch: cannot align daft_link by row index.")
 
@@ -20,7 +20,7 @@ featured_df = featured_df[featured_df['dublin_subcode'].astype(str).str.strip() 
 # Load trained model
 model = joblib.load("05_models/random_forest_rent_model.joblib")
 
-# Prepare features (exclude target + daft_link)
+# Prepare features
 excluded_cols = ["monthly_price", "daft_link"]
 feature_cols = [col for col in featured_df.columns if col not in excluded_cols]
 X = featured_df[feature_cols]
