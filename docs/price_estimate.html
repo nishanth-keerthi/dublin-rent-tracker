@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Price Estimator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/app.js" defer></script>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(135deg, #e9f0fb, #ffffff);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 60px 20px;
+      position: relative;
+    }
+
+    .social-links {
+      position: absolute;
+      top: 40px;
+      right: 40px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      font-size: 0.9rem;
+    }
+
+    .social-links a {
+      color: #0073e6;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    .social-links a:hover {
+      color: #005bb5;
+      text-decoration: underline;
+    }
+
+    .container {
+      background: #fff;
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+      max-width: 600px;
+      width: 100%;
+    }
+
+    h1 {
+      text-align: center;
+      color: #0073e6;
+      margin-bottom: 25px;
+    }
+
+    form label {
+      display: block;
+      margin: 12px 0 5px;
+      font-weight: 500;
+    }
+
+    form input[type="number"] {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+
+    button {
+      margin-top: 20px;
+      background: linear-gradient(to right, #0073e6, #00b4db);
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      font-size: 1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      width: 100%;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background: linear-gradient(to right, #005bb5, #009fb8);
+    }
+
+    #result {
+      margin-top: 30px;
+      font-size: 1.05rem;
+      background: #f3f8ff;
+      padding: 15px 20px;
+      border-left: 4px solid #0073e6;
+      border-radius: 6px;
+      color: #333;
+      white-space: pre-line;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 25px 20px;
+      }
+
+      .social-links {
+        top: 16px;
+        right: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="social-links">
+    <a href="https://github.com/nishanth-keerthi" target="_blank">🐱 GitHub</a>
+    <a href="https://ordinary-molybdenum-d39.notion.site/Nishanth-s-Data-Portfolio-227c3247852b80c092d1f28d2f08e48d" target="_blank">📁 Portfolio</a>
+    <a href="https://www.linkedin.com/in/nishanth-keerthi/" target="_blank">💼 LinkedIn</a>
+  </div>
+
+  <div class="container">
+    <h1>🏠 Estimate Rent in a Dublin Subcode</h1>
+
+    <form id="estimate-form">
+      <label for="subcode">Subcode (e.g., 6, 7, 8):</label>
+      <input type="number" id="subcode" name="subcode" min="1" required>
+
+      <label for="bedrooms">Bedrooms:</label>
+      <input type="number" id="bedrooms" name="bedrooms" min="0">
+
+      <label for="bathrooms">Bathrooms:</label>
+      <input type="number" id="bathrooms" name="bathrooms" min="0">
+
+      <button type="submit">Estimate</button>
+    </form>
+
+    <div id="result"></div>
+  </div>
+</body>
+</html>

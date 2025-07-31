@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Dublin Rent Tracker</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(135deg, #d9e4f5, #f7f8fc);
+      background-attachment: fixed;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+
+    .social-links {
+      position: absolute;
+      top: 20px;
+      right: 40px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      font-size: 0.9rem;
+    }
+
+    .social-links a {
+      color: #0073e6;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    .social-links a:hover {
+      color: #005bb5;
+      text-decoration: underline;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.75);
+      backdrop-filter: blur(15px);
+      -webkit-backdrop-filter: blur(15px);
+      padding: 50px 40px;
+      border-radius: 18px;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+      text-align: center;
+      max-width: 500px;
+      width: 90%;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+    }
+
+    h1 {
+      font-size: 2rem;
+      color: #0a66c2;
+      margin-bottom: 12px;
+    }
+
+    p {
+      font-size: 1.05rem;
+      color: #444;
+      margin-bottom: 6px;
+    }
+
+    .note {
+      font-size: 0.9rem;
+      color: #555;
+      margin-bottom: 28px;
+    }
+
+    ul.nav-links {
+      list-style: none;
+      padding: 0;
+      margin-top: 20px;
+    }
+
+    .nav-links li {
+      margin: 14px 0;
+    }
+
+    .nav-links a {
+      display: inline-block;
+      padding: 14px 20px;
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: #fff;
+      border-radius: 10px;
+      text-decoration: none;
+      background: linear-gradient(135deg, #0073e6, #00b4db);
+      box-shadow: 0 4px 14px rgba(0, 115, 230, 0.25);
+      transition: transform 0.2s ease, background 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      transform: scale(1.03);
+      background: linear-gradient(135deg, #005bb5, #009fb8);
+    }
+
+    @media (max-width: 480px) {
+      .card {
+        padding: 30px 25px;
+      }
+
+      h1 {
+        font-size: 1.6rem;
+      }
+
+      .nav-links a {
+        font-size: 1rem;
+        padding: 12px 16px;
+      }
+
+      .social-links {
+        top: 12px;
+        right: 40px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="social-links">
+    <a href="https://github.com/nishanth-keerthi" target="_blank">🐱 GitHub</a>
+    <a href="https://ordinary-molybdenum-d39.notion.site/Nishanth-s-Data-Portfolio-227c3247852b80c092d1f28d2f08e48d" target="_blank">📁 Portfolio</a>
+    <a href="https://www.linkedin.com/in/nishanth-keerthi/" target="_blank">💼 LinkedIn</a>
+  </div>
+
+  <div class="card">
+    <h1>Dublin Rent Tracker</h1>
+    <p>Explore predicted rent prices, compare areas,<br>and find listings that match your preferences.</p>
+    <p class="note">📅 Real-time data scraped until <strong>30/07/2025</strong>.</p>
+
+    <ul class="nav-links">
+      <li><a href="subcode_compare.html">🔍 Compare Rent by Subcode</a></li>
+      <li><a href="price_estimate.html">🏠 Estimate Rent for a Given Area</a></li>
+      <li><a href="ranked_listings.html">📊 Rank Listings by Your Filters</a></li>
+    </ul>
+  </div>
+</body>
+</html>
