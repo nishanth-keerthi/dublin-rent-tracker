@@ -18,7 +18,7 @@ This project tracks and analyzes rental listings in Dublin using data collected 
 1. **Data Collection:** Use `daftlistings` to fetch data from Daft.ie and store in CSV format  
 2. **ETL Pipeline:** Clean, transform, and generate featured datasets using Apache Airflow DAGs  
 3. **Exploratory Analysis:** Explore trends using Jupyter Notebooks  
-4. **Modeling:** Use LightGBM to predict rent and analyze feature importance  
+4. **Modeling:** Use `RandomforestRegressor` to predict rent and analyze feature importance  
 5. **Frontend Development:** Build an interactive frontend using HTML/CSS/JS with GitHub Pages  
 6. **(Optional in future)** Dashboarding with Power BI for stakeholder-friendly reporting
 
@@ -88,7 +88,7 @@ dublin_rent_tracker/
 
 - [`daftlistings`](https://github.com/anthony-reilly/daftlistings) – Python wrapper for accessing Daft.ie rental listings
 - Apache Airflow
-- Pandas, NumPy, LightGBM, Matplotlib, Seaborn
+- Pandas, NumPy, Randomforest, Matplotlib, Seaborn
 - HTML, CSS, JavaScript (for frontend)
 
 ## License
